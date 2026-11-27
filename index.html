@@ -47,10 +47,12 @@
       color: #08101E !important;
       font-weight: 700;
       font-size: 0.88rem;
-      padding: 10px 16px;
+      padding: 10px 18px;
       border-radius: 8px;
       text-decoration: none;
       white-space: nowrap;
+      border: none;
+      cursor: pointer;
     }
     .btn-outline {
       display: inline-block;
@@ -144,15 +146,24 @@
     th { background: #132238; color: #E8C967; }
     .hl { color: #FFFFFF; font-weight: 600; background: rgba(212, 175, 55, 0.07); }
 
-    /* Contact */
+    /* Contact Form */
     .cta {
       background: #132238; border: 1.5px solid #D4AF37;
-      border-radius: 16px; padding: 36px 20px; text-align: center;
+      border-radius: 16px; padding: 36px 24px; text-align: center;
+      max-width: 640px; margin: 0 auto;
     }
     .cta h2 { font-size: 1.7rem; margin-bottom: 10px; }
-    .cta p { color: #94A3B8; max-width: 560px; margin: 0 auto 22px; }
+    .cta p { color: #94A3B8; margin-bottom: 20px; }
+    .form-grid { display: grid; gap: 14px; text-align: left; }
+    .form-grid label { display: block; font-size: 0.85rem; color: #CBD5E1; margin-bottom: 4px; }
+    .form-grid input, .form-grid textarea {
+      width: 100%; padding: 12px; border-radius: 8px;
+      border: 1px solid rgba(212,175,55,0.35);
+      background: #08101E; color: #FFFFFF; font-size: 0.95rem;
+      font-family: inherit;
+    }
     .email-link {
-      display: inline-block; margin-top: 14px; padding: 10px 16px;
+      display: inline-block; margin-top: 16px; padding: 10px 16px;
       background: #08101E; border: 1px solid rgba(212,175,55,0.3);
       border-radius: 8px; color: #E8C967; text-decoration: none; font-weight: 600;
     }
@@ -179,7 +190,7 @@
         <a href="#services">Services</a>
         <a href="#pricing">Savings</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn-gold">Book a Call</a>
+        <a href="#contact" class="btn-gold">Email Us</a>
       </div>
     </div>
   </header>
@@ -191,8 +202,8 @@
         <h1>Dedicated Native-English Receptionists at <span>Half the Local Cost.</span></h1>
         <p>Stop losing $10,000+ customer leads to voicemail. Vanguard Voice recruits, trains, and manages full-time remote receptionists and appointment setters in Guyana—aligned with North American &amp; UK hours at 50%–60% less than US/UK payroll.</p>
         <div class="actions">
-          <a href="#contact" class="btn-gold">Book a 15-Min Discovery Call</a>
-          <a href="mailto:info@://vanguardvoicesupport.com" class="btn-outline">Email Our Team</a>
+          <a href="#contact" class="btn-gold">Send an Inquiry</a>
+          <a href="mailto:info@://vanguardvoicesupport.com" class="btn-outline">info@vanguardvoicesupport.com</a>
         </div>
         <div class="trust">
           <div><strong>50%–60% Lower Cost</strong> vs. US/UK Hires</div>
@@ -228,10 +239,3 @@
 
       <div class="guyana-box">
         <h3>South America's Only Native English-Speaking Nation</h3>
-        <p>Unlike offshore regions where heavy accents or overnight shift fatigue hurt customer trust, Guyana has English as its official language, strong Western cultural familiarity, and sits right in the Eastern/Atlantic time zone corridor—giving your callers a warm, natural experience every single ring.</p>
-      </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <div class="tag">01 / Half the Overhead</div>
-          <h3>Save 50%–60% on Staffing</h3>
