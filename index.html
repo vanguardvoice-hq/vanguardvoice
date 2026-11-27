@@ -4,189 +4,198 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vanguard Voice | Native-English Reception & Support Teams at Half the Cost</title>
-  <meta name="description" content="Hire pre-vetted, native-English remote receptionists and appointment setters from Guyana aligned with EST/AST business hours—at up to 50–60% less than local US/UK hiring." />
+  <meta name="description" content="Hire pre-vetted, native-English remote receptionists and appointment setters from Guyana aligned with EST/AST business hours—at 50–60% less than local US/UK hiring." />
   <link rel="icon" type="image/jpeg" href="IMG_e7d452ea-c503-4d83-836b-a24abe7fbf35.jpg" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #08101E;
+      background: #060C17;
       color: #F8FAFC;
       line-height: 1.6;
     }
-    .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
 
-    /* Header */
+    /* Sticky Solid Header */
     header {
       position: sticky; top: 0; z-index: 100;
-      background: #08101E;
-      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+      background: #060C17;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.3);
     }
     .nav {
       display: flex; align-items: center; justify-content: space-between;
-      height: 68px; gap: 10px;
+      height: 70px; gap: 10px;
     }
     .brand {
       display: flex; align-items: center; gap: 10px;
       text-decoration: none; color: #FFFFFF;
     }
     .brand img {
-      width: 38px; height: 38px; border-radius: 50%;
+      width: 40px; height: 40px; border-radius: 50%;
       border: 1.5px solid #D4AF37; object-fit: cover;
     }
-    .brand-name { font-weight: 800; font-size: 0.98rem; letter-spacing: 0.4px; }
+    .brand-name { font-weight: 800; font-size: 1rem; letter-spacing: 0.5px; }
     .brand-name span { color: #D4AF37; }
     .nav-links { display: flex; align-items: center; gap: 18px; }
-    .nav-links a { color: #CBD5E1; text-decoration: none; font-size: 0.88rem; }
+    .nav-links a { color: #CBD5E1; text-decoration: none; font-size: 0.88rem; font-weight: 500; }
+    .nav-links a:hover { color: #D4AF37; }
 
     /* Buttons */
     .btn-gold {
-      display: inline-block;
-      background: #D4AF37;
-      color: #08101E !important;
-      font-weight: 700;
-      font-size: 0.88rem;
-      padding: 11px 18px;
+      display: inline-flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #E8C967, #C99E28);
+      color: #060C17 !important;
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 11px 20px;
       border-radius: 8px;
       text-decoration: none;
       white-space: nowrap;
       border: none;
       cursor: pointer;
+      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.25);
     }
     .btn-outline {
-      display: inline-block;
+      display: inline-flex; align-items: center; justify-content: center;
       border: 1.5px solid #D4AF37;
-      background: transparent;
-      color: #D4AF37 !important;
+      background: rgba(212, 175, 55, 0.06);
+      color: #E8C967 !important;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       padding: 10px 18px;
       border-radius: 8px;
       text-decoration: none;
       cursor: pointer;
     }
+    .btn-social {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: #101D33;
+      color: #F8FAFC !important;
+      font-weight: 600;
+      font-size: 0.88rem;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .btn-social:hover { border-color: #D4AF37; color: #E8C967 !important; }
 
     /* Hero */
     .hero {
-      padding: 46px 0 56px;
-      background: linear-gradient(180deg, #0D192B 0%, #08101E 100%);
-      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+      padding: 52px 0 64px;
+      background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.12), transparent 55%),
+                  linear-gradient(180deg, #0D192B 0%, #060C17 100%);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
     }
     .hero-grid {
-      display: grid; grid-template-columns: 1.25fr 0.75fr;
-      gap: 32px; align-items: center;
+      display: grid; grid-template-columns: 1.2fr 0.8fr;
+      gap: 36px; align-items: center;
     }
     .badge {
-      display: inline-block; padding: 5px 12px;
+      display: inline-block; padding: 6px 14px;
       background: rgba(212, 175, 55, 0.15);
-      border: 1px solid rgba(212, 175, 55, 0.35);
+      border: 1px solid rgba(212, 175, 55, 0.4);
       border-radius: 20px; color: #E8C967;
-      font-size: 0.74rem; font-weight: 700; text-transform: uppercase;
-      margin-bottom: 14px;
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.6px; margin-bottom: 16px;
     }
-    h1 { font-size: clamp(1.85rem, 4vw, 2.8rem); line-height: 1.18; margin-bottom: 14px; }
+    h1 { font-size: clamp(1.95rem, 4.2vw, 3rem); line-height: 1.15; margin-bottom: 16px; }
     h1 span { color: #D4AF37; }
-    .hero p { color: #94A3B8; font-size: 1rem; margin-bottom: 24px; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+    .hero p { color: #CBD5E1; font-size: 1.02rem; margin-bottom: 24px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 26px; }
     .trust {
-      display: flex; flex-wrap: wrap; gap: 16px;
-      padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.1);
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+      padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.12);
       font-size: 0.84rem; color: #94A3B8;
     }
-    .trust strong { color: #E8C967; }
+    .trust strong { display: block; color: #E8C967; font-size: 0.95rem; }
 
     .hero-card {
-      background: #132238; border: 1px solid rgba(212, 175, 55, 0.35);
-      border-radius: 14px; padding: 24px; text-align: center;
+      background: linear-gradient(180deg, #132238, #0D192B);
+      border: 1.5px solid rgba(212, 175, 55, 0.4);
+      border-radius: 16px; padding: 28px; text-align: center;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.5);
     }
     .hero-card img {
-      width: 100px; height: 100px; border-radius: 50%;
-      border: 2px solid #D4AF37; object-fit: cover; margin-bottom: 12px;
+      width: 112px; height: 112px; border-radius: 50%;
+      border: 2px solid #D4AF37; object-fit: cover; margin-bottom: 14px;
     }
-    .hero-card h3 { margin-bottom: 6px; font-size: 1.12rem; }
-    .hero-card p { font-size: 0.88rem; margin-bottom: 16px; }
+    .hero-card h3 { margin-bottom: 8px; font-size: 1.18rem; color: #FFFFFF; }
+    .hero-card p { font-size: 0.9rem; color: #94A3B8; margin-bottom: 18px; }
     .stats {
       display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
-      background: #08101E; padding: 12px; border-radius: 10px;
+      background: #060C17; padding: 14px; border-radius: 10px;
+      border: 1px solid rgba(212, 175, 55, 0.2);
     }
-    .stat-num { font-size: 1.2rem; font-weight: 800; color: #D4AF37; }
-    .stat-txt { font-size: 0.73rem; color: #94A3B8; }
+    .stat-num { font-size: 1.25rem; font-weight: 800; color: #D4AF37; }
+    .stat-txt { font-size: 0.75rem; color: #94A3B8; }
 
     /* Sections */
-    section { padding: 56px 0; }
-    .alt { background: #0D192B; border-top: 1px solid rgba(212,175,55,0.15); border-bottom: 1px solid rgba(212,175,55,0.15); }
-    .sec-head { text-align: center; max-width: 680px; margin: 0 auto 36px; }
-    .sec-head h2 { font-size: 1.8rem; margin-bottom: 8px; }
+    section { padding: 64px 0; }
+    .alt { background: #0B1526; border-top: 1px solid rgba(212,175,55,0.18); border-bottom: 1px solid rgba(212,175,55,0.18); }
+    .sec-head { text-align: center; max-width: 700px; margin: 0 auto 40px; }
+    .sec-head h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 10px; color: #FFFFFF; }
     .sec-head p { color: #94A3B8; font-size: 0.98rem; }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
-    .card {
-      background: #0D192B; border: 1px solid rgba(212, 175, 55, 0.22);
-      border-radius: 12px; padding: 22px;
-    }
-    .alt .card { background: #08101E; }
-    .tag { color: #D4AF37; font-size: 0.74rem; font-weight: 700; text-transform: uppercase; margin-bottom: 6px; }
-    .card h3 { font-size: 1.08rem; margin-bottom: 8px; color: #FFFFFF; }
-    .card p { color: #94A3B8; font-size: 0.9rem; }
 
-    /* Highlight Banner */
-    .guyana-box {
-      background: linear-gradient(135deg, #132238, #0D192B);
-      border: 1px solid rgba(212, 175, 55, 0.35);
-      border-radius: 14px;
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+    .card {
+      background: #0D192B; border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 14px; padding: 24px;
+    }
+    .alt .card { background: #060C17; }
+    .tag { color: #D4AF37; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+    .card h3 { font-size: 1.12rem; margin-bottom: 10px; color: #FFFFFF; }
+    .card p { color: #94A3B8; font-size: 0.92rem; }
+    .card ul { margin-top: 12px; padding-left: 18px; color: #CBD5E1; font-size: 0.88rem; }
+    .card li { margin-bottom: 6px; }
+
+    /* Guyana Feature Banner */
+    .guyana-banner {
+      background: linear-gradient(135deg, #162844, #0D192B);
+      border: 1.5px solid rgba(212, 175, 55, 0.45);
+      border-radius: 16px;
       padding: 28px;
       margin-bottom: 24px;
     }
-    .guyana-box h3 { color: #E8C967; font-size: 1.25rem; margin-bottom: 10px; }
-    .guyana-box p { color: #CBD5E1; font-size: 0.95rem; }
+    .guyana-banner h3 { color: #E8C967; font-size: 1.25rem; margin-bottom: 8px; }
+    .guyana-banner p { color: #E2E8F0; font-size: 0.95rem; }
 
-    /* Table */
-    .table-wrap { overflow-x: auto; border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 12px; }
+    /* Comparison Table */
+    .table-wrap { overflow-x: auto; border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 14px; }
     table { width: 100%; border-collapse: collapse; background: #0D192B; text-align: left; }
-    th, td { padding: 14px 16px; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 0.9rem; }
-    th { background: #132238; color: #E8C967; }
-    .hl { color: #FFFFFF; font-weight: 600; background: rgba(212, 175, 55, 0.07); }
+    th, td { padding: 15px 18px; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 0.92rem; }
+    th { background: #132238; color: #E8C967; font-weight: 700; }
+    .hl { color: #FFFFFF; font-weight: 700; background: rgba(212, 175, 55, 0.08); }
 
-    /* Contact Form & Socials */
+    /* Pricing Tiers */
+    .price-card {
+      background: #0D192B; border: 1.5px solid rgba(212, 175, 55, 0.35);
+      border-radius: 14px; padding: 28px; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .price-card.featured { border-color: #D4AF37; background: linear-gradient(180deg, #152540, #0D192B); }
+    .price-amount { font-size: 2rem; font-weight: 800; color: #D4AF37; margin: 10px 0; }
+    .price-amount span { font-size: 0.9rem; color: #94A3B8; font-weight: 500; }
+
+    /* Bottom Direct Contact Box */
     .cta {
-      background: #132238; border: 1.5px solid #D4AF37;
-      border-radius: 16px; padding: 36px 24px; text-align: center;
-      max-width: 640px; margin: 0 auto;
+      background: linear-gradient(135deg, #132238, #0B1526);
+      border: 2px solid #D4AF37;
+      border-radius: 18px; padding: 44px 24px; text-align: center;
+      max-width: 760px; margin: 0 auto;
     }
-    .cta h2 { font-size: 1.7rem; margin-bottom: 10px; }
-    .cta p { color: #94A3B8; margin-bottom: 20px; }
-    .form-grid { display: grid; gap: 14px; text-align: left; }
-    .form-group label { display: block; font-size: 0.85rem; color: #CBD5E1; margin-bottom: 4px; }
-    .form-group input, .form-group textarea {
-      width: 100%; padding: 12px; border-radius: 8px;
-      border: 1px solid rgba(212,175,55,0.35);
-      background: #08101E; color: #FFFFFF; font-size: 0.95rem;
-      font-family: inherit;
-    }
-    .email-row, .social-row {
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
-      margin-top: 16px;
-    }
-    .email-pill {
-      display: inline-block; padding: 10px 16px;
-      background: #08101E; border: 1px solid rgba(212,175,55,0.3);
-      border-radius: 8px; color: #E8C967; font-weight: 600;
-      user-select: all;
-    }
-    .social-btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 18px; border-radius: 8px;
-      background: #08101E; border: 1px solid rgba(212,175,55,0.4);
-      color: #F8FAFC; text-decoration: none; font-size: 0.9rem; font-weight: 600;
-    }
-    .social-btn:hover { border-color: #D4AF37; color: #E8C967; }
+    .cta h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 12px; color: #FFFFFF; }
+    .cta p { color: #CBD5E1; max-width: 580px; margin: 0 auto 24px; font-size: 0.98rem; }
+    .cta-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 18px; }
+    .founder-note { font-size: 0.85rem; color: #94A3B8; margin-top: 14px; }
 
-    footer { padding: 28px 0; text-align: center; color: #94A3B8; font-size: 0.85rem; }
-    footer a { color: #D4AF37; text-decoration: none; margin: 0 8px; }
+    footer { padding: 32px 0; text-align: center; color: #94A3B8; font-size: 0.86rem; border-top: 1px solid rgba(212, 175, 55, 0.2); }
+    footer a { color: #D4AF37; text-decoration: none; margin: 0 8px; font-weight: 600; }
 
     @media (max-width: 820px) {
-      .hero-grid, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .hero-grid, .grid-3, .grid-2, .trust { grid-template-columns: 1fr; }
       .nav-links a:not(.btn-gold) { display: none; }
     }
   </style>
@@ -201,10 +210,10 @@
       </a>
       <div class="nav-links">
         <a href="#guyana">Why Guyana</a>
-        <a href="#services">Services</a>
-        <a href="#pricing">Savings</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn-gold">Email Us</a>
+        <a href="#industries">Industries</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#process">How It Works</a>
+        <a href="mailto:info@://vanguardvoicesupport.com" class="btn-gold">Email Us</a>
       </div>
     </div>
   </header>
@@ -214,35 +223,6 @@
       <div>
         <div class="badge">Managed Guyanese BPO &amp; Reception Agency</div>
         <h1>Dedicated Native-English Receptionists at <span>Half the Local Cost.</span></h1>
-        <p>Stop losing $10,000+ customer leads to voicemail. Vanguard Voice recruits, trains, and manages full-time remote receptionists and appointment setters in Guyana—aligned with North American &amp; UK hours at 50%–60% less than US/UK payroll.</p>
+        <p>Stop losing $10,000+ customer calls to voicemail. Vanguard Voice recruits, trains, and actively manages full-time remote receptionists and appointment setters in Guyana—working your exact North American &amp; UK business hours at 50%–60% less than US/UK payroll.</p>
+        
         <div class="actions">
-          <a href="#contact" class="btn-gold">Send an Inquiry</a>
-          <button type="button" class="btn-outline" onclick="copyEmail(this)">Copy: info@vanguardvoicesupport.com</button>
-        </div>
-        <div class="trust">
-          <div><strong>50%–60% Lower Cost</strong> vs. US/UK Hires</div>
-          <div><strong>100% Native English</strong> (Guyana)</div>
-          <div><strong>EST / AST</strong> Daytime Alignment</div>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <img src="IMG_e7d452ea-c503-4d83-836b-a24abe7fbf35.jpg" alt="Vanguard Voice Shield" onerror="this.style.display='none'">
-        <h3>Built for Busy Service Companies</h3>
-        <p>Roofing &amp; HVAC contractors, home services, medical/dental clinics, legal offices, and growing agencies.</p>
-        <div class="stats">
-          <div>
-            <div class="stat-num">~50% Less</div>
-            <div class="stat-txt">Than Local Payroll</div>
-          </div>
-          <div>
-            <div class="stat-num">&lt; 3 Rings</div>
-            <div class="stat-txt">Live Call Pickup</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="guyana" class="alt">
-    <div class="container">
