@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanguard Voice | Premium Native-English Support</title>
-    <meta name="description" content="Scale your business with dedicated, highly-trained virtual reception and customer support teams based in Guyana. Clear English, perfect time zone alignment, and cost-effective.">
+    <meta name="description" content="Scale your business with dedicated, highly-trained virtual reception and customer support teams based in Guyana.">
     
-    <!-- Google Fonts for Premium Look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
-        /* CSS Variables based on your exact theme */
         :root {
-            --navy-dark: #0a1428; /* Matches your logo background */
+            --navy-dark: #0a1428;
             --navy-light: #111f36;
-            --gold: #d4af37;      /* Matches your logo/banner gold */
+            --gold: #d4af37;
             --gold-hover: #f1c40f;
             --white: #ffffff;
             --text-gray: #b0b8c4;
@@ -35,7 +33,6 @@
             line-height: 1.6;
         }
 
-        /* Typography */
         h1, h2, h3, h4 {
             font-family: 'Cinzel', serif;
             color: var(--gold);
@@ -65,6 +62,8 @@
             height: 55px;
             border-radius: 50%;
             border: 1px solid var(--gold);
+            /* Fallback background if image fails */
+            background-color: var(--navy-light); 
         }
 
         .logo-text {
@@ -94,9 +93,9 @@
             color: var(--gold);
         }
 
-        /* Hero Section with your Banner Image */
+        /* Hero Section */
         .hero {
-            /* Using your banner.jpg with a dark overlay so text is readable */
+            /* Uses your renamed banner.jpg */
             background: linear-gradient(rgba(10, 20, 40, 0.85), rgba(10, 20, 40, 0.95)), url('banner.jpg') center/cover no-repeat;
             text-align: center;
             padding: 140px 20px;
@@ -143,7 +142,6 @@
             transform: translateY(-2px);
         }
 
-        /* Section Styling */
         section {
             padding: 80px 5%;
         }
@@ -257,7 +255,6 @@
             text-decoration: underline;
         }
 
-        /* Footer */
         footer {
             background-color: #050c17;
             text-align: center;
@@ -272,6 +269,18 @@
                 flex-direction: column;
                 gap: 15px;
                 padding: 15px;
+                text-align: center;
+            }
+            .logo-container {
+                flex-direction: column; 
+                gap: 10px;
+            }
+            .logo-container img {
+                height: 70px; 
+            }
+            .logo-text {
+                font-size: 1.2rem; 
+                white-space: nowrap; 
             }
             nav {
                 flex-wrap: wrap;
@@ -279,7 +288,7 @@
                 gap: 15px;
             }
             .hero {
-                padding: 100px 20px;
+                padding: 80px 20px;
             }
             .hero h1 {
                 font-size: 2rem;
@@ -295,10 +304,10 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header>
         <div class="logo-container">
-            <img src="IMG_e7d452ea-c503-4d83-836b-a24abe7fbf35.jpg" alt="Vanguard Voice Logo">
+            <!-- Using the renamed logo.jpg -->
+            <img src="logo.jpg" alt="Vanguard Voice Logo">
             <div class="logo-text">VANGUARD VOICE</div>
         </div>
         <nav>
@@ -308,14 +317,12 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <h1>Premium Native-English Support.<br>Unbeatable Value.</h1>
         <p>Scale your business with dedicated, highly-trained virtual reception and customer support teams based in Guyana—the only English-speaking country in South America.</p>
         <a href="#contact" class="btn-gold">Schedule a Consultation</a>
     </section>
 
-    <!-- Why Guyana Section -->
     <section id="why-guyana" class="why-guyana">
         <h2 class="section-title">Why Top Companies Choose Guyana</h2>
         <p class="section-subtitle">We provide a strategic nearshore advantage that other outsourcing destinations simply cannot match.</p>
@@ -323,24 +330,23 @@
         <div class="features-grid">
             <div class="feature-card">
                 <h3>🗣️ No Accent Barriers</h3>
-                <p>Guyana’s official language is English. Your customers will speak to agents with clear, neutral, and easily understood English, ensuring a seamless brand experience without frustrating communication gaps.</p>
+                <p>Guyana’s official language is English. Your customers will speak to agents with clear, neutral, and easily understood English, ensuring a seamless brand experience.</p>
             </div>
             <div class="feature-card">
                 <h3>🕒 Perfect Time Zone Alignment</h3>
-                <p>Located in the Atlantic Standard Time (AST) zone, we align perfectly with US Eastern Time. Enjoy real-time collaboration, live training, and coverage during your standard business hours.</p>
+                <p>Located in the Atlantic Standard Time (AST) zone, we align perfectly with US Eastern Time. Enjoy real-time collaboration and coverage during your standard business hours.</p>
             </div>
             <div class="feature-card">
                 <h3>📉 Unmatched Cost-Efficiency</h3>
-                <p>Get premium, US-quality support at a fraction of the domestic cost. We eliminate the heavy overhead of local hiring, allowing you to scale your team up or down without breaking your budget.</p>
+                <p>Get premium, US-quality support at a fraction of the domestic cost. We eliminate the heavy overhead of local hiring, allowing you to scale your team without breaking your budget.</p>
             </div>
             <div class="feature-card">
                 <h3>🤝 Cultural Affinity</h3>
-                <p>Our agents are trained in Western business etiquette. They don't just read scripts; they understand your customers' cultural nuances and provide empathetic, natural interactions.</p>
+                <p>Our agents are trained in Western business etiquette. They don't just read scripts; they understand your customers' cultural nuances and provide empathetic interactions.</p>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services">
         <h2 class="section-title">Our Core Services</h2>
         <p class="section-subtitle">Tailored solutions designed to relieve your team and impress your clients.</p>
@@ -365,21 +371,18 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2 class="section-title">Ready to Elevate Your Customer Experience?</h2>
         <p class="section-subtitle">Stop letting missed calls or high domestic payroll costs hold your business back. Let Vanguard Voice build a dedicated, cost-effective team for you.</p>
         
         <div class="contact-info">
             <p>Email us directly to discuss your needs:</p>
-            <!-- This is the corrected mailto link to fix your GitHub issue -->
             <a href="mailto:info@vanguardvoicesupport.com">info@vanguardvoicesupport.com</a>
         </div>
         
         <a href="mailto:info@vanguardvoicesupport.com" class="btn-gold">Get Started Today</a>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Vanguard Voice. All Rights Reserved.</p>
         <p>Georgetown, Guyana | Serving Global Clients</p>
